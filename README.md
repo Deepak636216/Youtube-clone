@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# YouTube Clone
 
-In the project directory, you can run:
+A responsive, interactive YouTube clone application built using ReactJS, Material-UI, and Axios for fetching video data from RapidAPI, simulating core YouTube features like video search, browsing, and viewing. This project demonstrates frontend skills in React component design and API integration.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Video Search and Display**: Browse and search videos using the YouTube Data API.
+- **Responsive UI**: Built with Material-UI for a sleek and responsive layout.
+- **Video Playback**: Video player with related video suggestions.
+- **API Integration**: Axios for asynchronous API calls to fetch dynamic content.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+### `public/`
+Contains static files and the HTML template for React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `src/`
+Main folder housing React components and configuration.
 
-### `npm run build`
+- **`components/`**: Core UI components for video display, search bar, and layout.
+  - `Header.js`: Site navigation and search bar.
+  - `VideoCard.js`: Component to render individual video items.
+  - `VideoPlayer.js`: Dedicated player view for selected videos.
+  - `Sidebar.js`: Displays categories for browsing.
+  
+- **`api/`**: API configuration for Axios, including base URL setup.
+- **`App.js`**: Main app component, defining the app structure.
+- **`App.css`**: Custom styles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Configuration Files
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`.env`**: API key and environment configuration.
+- **`package.json`**: Lists dependencies and scripts for app setup.
+- **`.gitignore`**: Files to exclude from version control.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js and npm installed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/Deepak636216/Youtube-clone.git
+cd Youtube-clone
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup
 
-## Learn More
+1. Obtain an API key from [RapidAPI](https://rapidapi.com/).
+2. Create a `.env` file and add your key:
+   ```plaintext
+   REACT_APP_API_KEY=your_api_key
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run the App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+Visit `http://localhost:3000` to explore the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Dependencies
 
-### Analyzing the Bundle Size
+- **ReactJS**: JavaScript library for building UI.
+- **Material-UI**: Components for responsive design.
+- **Axios**: For HTTP requests to RapidAPI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
